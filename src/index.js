@@ -12,7 +12,7 @@ app.listen(port, ()=>{
 
 const db = require('./database');
 
-app.pessoa('/usuario', db.addPessoa);
-app.amizade('/usuario', db.addAmizade);
+app.use('/usuario', db.addPessoa);
+app.use('/usuario', db.addAmizade);
 app.put('/usuario', db.up);
 app.delete('/usuario/:id', db.delet);
